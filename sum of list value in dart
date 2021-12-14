@@ -1,0 +1,26 @@
+import 'dart:io';
+void main() {
+int size=0;
+int input=0;
+int total=0;
+var number = [];
+print("Enter List size");
+size=int.parse(stdin.readLineSync()!);
+print("Yout enter $size size of list, Please enter $size number");
+for(var i=0; i<size; i++)
+{
+input = int.parse(stdin.readLineSync()!);
+number.add(input);
+}
+print("Your Enter following");
+print(number);
+print("Sum of enter number");
+
+for(var i=0; i<size; i++)
+{
+total= number[i]+total;
+
+}
+print(total);
+}
+
